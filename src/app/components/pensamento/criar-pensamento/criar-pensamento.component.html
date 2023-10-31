@@ -1,11 +1,13 @@
 <section class="container criar-pensamentos ff-inter">
   <header class="header">
+
+    <!-- Título -->
     <h2>
-      Adicione um <br />
-      pensamento novo:
+      Adicione um <br /> pensamento novo:
     </h2>
     <br />
     <form>
+
       <!--Pensamento-->
       <label for="pensamento">Pensamento</label>
       <input
@@ -31,6 +33,8 @@
       <!--Forma/modelo-->
       <label for="modelo">Selecione o modelo do card:</label>
       <div class="container-radio">
+
+        <!-- Modelo 1 -->
         <div class="radio-modelo">
           <label for="modelo1">
             <input
@@ -52,6 +56,8 @@
               <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
           </div>
         </div>
+
+        <!-- Modelo 2 -->
         <div class="radio-modelo">
           <label for="modelo2">
             <input
@@ -73,6 +79,8 @@
               <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
           </div>
         </div>
+
+        <!-- Modelo 3 -->
         <div class="radio-modelo">
           <label for="modelo3">
             <input
@@ -95,9 +103,11 @@
           </div>
         </div>
       </div>
+
+      <!-- Botão de salvar e cancelar -->
       <div class="acoes">
-        <button class="botao">Salvar</button>
-        <button class="botao">Cancelar</button>
+        <button class="botao" (click)="salvar()">Salvar</button>
+        <button class="botao" (click)="cancelar()">Cancelar</button>
     </div>
     </form>
   </header>

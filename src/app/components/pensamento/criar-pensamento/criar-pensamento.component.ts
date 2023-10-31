@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Pensamento } from 'src/app/models/pensamento.model';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-criar-pensamento',
@@ -21,6 +22,18 @@ export class CriarPensamentoComponent implements OnInit {
   initializeComponents() {
     this.pensamento.conteudo = "Aqui vai o conteúdo"
     this.pensamento.autoria = "Aqui vai a autoria"
+  }
+
+  salvar() {
+
+  }
+
+  /**
+   * Limpa todo o conteúdo
+   */
+  cancelar() {
+    this.pensamento = new Pensamento();
+    this.initializeComponents();
   }
 
 }
