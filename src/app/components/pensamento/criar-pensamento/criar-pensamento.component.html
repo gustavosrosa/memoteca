@@ -14,6 +14,7 @@
         name="pensamento"
         id="pensamento"
         placeholder="Informe seu pensamento."
+        [(ngModel)]="pensamento.conteudo"
       />
 
       <!--Autoria-->
@@ -24,6 +25,7 @@
         name="autoria"
         id="autoria"
         placeholder="Informe a autoria ou fonte."
+        [(ngModel)]="pensamento.autoria"
       />
 
       <!--Forma/modelo-->
@@ -46,8 +48,8 @@
           Prévia:
             <div class="modelo modelo1 ff-roboto-mono">
               <img src="../../../../assets/imagens/modelo1.png" alt="Aspas azuis">
-              <p class="conteudo">Aqui vai o conteúdo</p>
-              <p class="autoria"><b>Aqui vai a autoria</b></p>
+              <p class="conteudo">{{ pensamento.conteudo }}</p>
+              <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
           </div>
         </div>
         <div class="radio-modelo">
@@ -67,8 +69,8 @@
           Prévia:
             <div class="modelo modelo2 ff-roboto-mono">
               <img src="../../../../assets/imagens/modelo2.png" alt="Aspas azuis">
-              <p class="conteudo">Aqui vai o conteúdo</p>
-              <p class="autoria"><b>Aqui vai a autoria</b></p>
+              <p class="conteudo">{{ pensamento.conteudo }}</p>
+              <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
           </div>
         </div>
         <div class="radio-modelo">
@@ -88,8 +90,8 @@
           Prévia:
             <div class="modelo modelo3 ff-roboto-mono">
               <img src="../../../../assets/imagens/modelo3.png" alt="Aspas azuis">
-              <p class="conteudo">Aqui vai o conteúdo</p>
-              <p class="autoria"><b>Aqui vai a autoria</b></p>
+              <p class="conteudo">{{ pensamento.conteudo }}</p>
+              <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
           </div>
         </div>
       </div>
